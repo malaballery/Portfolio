@@ -1,0 +1,266 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #fffff9;
+  font-family: "Space Mono", monospace;
+  font-size: 1.6rem;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "BioRhyme", serif;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  background-color: #3d3eeb;
+}
+
+header > * {
+  margin: 1rem;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content > span {
+  color: #ebcb3d;
+}
+.header-img {
+  background-image: url(img/P1000144-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin: 3rem 0;
+}
+
+h1,
+header h3,
+.header-content > p {
+  color: #fffff9;
+  text-align: center;
+}
+.divider {
+  border-bottom: 2px solid #677aa8;
+}
+.typing-demo {
+  width: 23ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+section {
+  margin: 5rem 10rem;
+}
+
+/* Présentation */
+.presentation {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
+}
+.presentation-text {
+  width: 50rem;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.first-letter {
+  font-size: 250%;
+  background-color: #3d3eeb;
+  box-shadow: -8px -8px 2px 1px rgba(0, 0, 255, 0.2);
+  color: #fffff9;
+  padding: 0.2rem;
+}
+
+/* Technologies utilisées */
+
+.container-technos,
+.container-project {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.container-technos {
+  flex-wrap: wrap;
+}
+.content-technos {
+  margin: 1rem 3rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  background: rgba(103, 103, 140, 0.1);
+  flex: 1;
+}
+
+.content-technos-title {
+  text-transform: uppercase;
+}
+.content-technos-list {
+  padding: 0;
+}
+.content-technos-list > li {
+  list-style-type: none;
+}
+/* Projets */
+.container-project {
+  max-width: 75%;
+  flex-wrap: wrap;
+}
+#container-project {
+  display: flex;
+  justify-content: center;
+}
+.content-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+.content-project-text {
+  max-width: 25rem;
+}
+.content-project-title {
+  text-transform: uppercase;
+}
+.img-project {
+  margin: 1rem 0;
+  border-radius: 1rem;
+}
+
+/* Contact */
+.container-contact {
+  background: rgba(103, 103, 140, 0.1);
+  padding: 3rem 0;
+}
+.contact-title {
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.contact-content {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.contact-content > label {
+  margin: 0.5rem 0;
+}
+.form-second-part > label {
+  margin: 0.5rem 0;
+}
+.contact-input {
+  border-radius: 0.2rem;
+  width: 30rem;
+  height: 4rem;
+  border: 0;
+  padding: 0 1rem;
+}
+.form-second-part {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+}
+#message {
+  border-radius: 0.5rem;
+  border: 0;
+}
+.button {
+  border-radius: 0.5rem;
+  padding: 1rem 4rem;
+  background: #3d3eeb;
+  color: #fffff9;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0;
+}
+
+/* Footer */
+footer {
+  padding: 3rem 0;
+}
+.footer-text {
+  text-align: center;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 868px) {
+  .form-contact {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .form-second-part {
+    margin-left: 0;
+    width: 75%;
+  }
+  .content-technos {
+    margin: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .content-technos {
+    margin: 1.5rem 0.5rem;
+  }
+  .button {
+    width: 100%;
+    margin: 1rem;
+  }
+  .contact-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
