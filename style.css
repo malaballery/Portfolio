@@ -49,7 +49,19 @@ header > * {
   justify-content: center;
   align-items: center;
 }
+.header-link {
+  display: flex;
+  margin: 1.5rem 1rem;
+}
+.header-link > * {
+  margin: 1.5rem 1rem;
+  text-align: center;
+}
 
+.header-link > a {
+  text-decoration: none;
+  color: #fffff9;
+}
 .header-content > span {
   color: #ebcb3d;
 }
@@ -157,6 +169,11 @@ section {
   flex-direction: column;
   align-items: center;
   margin: 2rem;
+  transition: transform 1s ease;
+}
+
+.content-project:hover {
+  transform: scale(1.1);
 }
 .content-project-text {
   max-width: 25rem;
